@@ -1,0 +1,96 @@
+assignment> show dbs
+admin         40.00 KiB
+aggregation  200.00 KiB
+assignment   152.00 KiB
+config       108.00 KiB
+local         40.00 KiB
+mongo         12.00 KiB
+mongoDb      180.00 KiB
+shop         716.00 KiB
+students      72.00 KiB
+assignment> show collections
+customers
+orders
+products
+assignment> db.customers.find()
+[
+  {
+    _id: ObjectId("6555b715e906f17c0a2c9e7b"),
+    id: 1,
+    customerName: 'john doe',
+    city: 'new york'
+  },
+  {
+    _id: ObjectId("6555b715e906f17c0a2c9e7c"),
+    id: 2,
+    customerName: 'jane smith',
+    city: 'london'
+  },
+  {
+    _id: ObjectId("6555b715e906f17c0a2c9e7d"),
+    id: 3,
+    customerName: 'david wang',
+    city: 'beljing'
+  },
+  {
+    _id: ObjectId("6555b715e906f17c0a2c9e7e"),
+    id: 4,
+    customerName: 'lisa chen',
+    city: 'shanghai'
+  }
+]
+assignment> db.orders.find()
+[
+  {
+    _id: ObjectId("6555b84be906f17c0a2c9e7f"),
+    orderId: 1001,
+    customerId: 1,
+    total: 200
+  },
+  {
+    _id: ObjectId("6555b84be906f17c0a2c9e80"),
+    orderId: 1002,
+    customerId: 2,
+    total: 150
+  },
+  {
+    _id: ObjectId("6555b9c2e906f17c0a2c9e83"),
+    orderId: 1003,
+    customerId: 3,
+    total: 300
+  },
+  {
+    _id: ObjectId("6555b9c2e906f17c0a2c9e84"),
+    orderId: 1004,
+    customerId: 1,
+    total: 120
+  }
+]
+assignment> db.products.find()
+[
+  {
+    _id: ObjectId("6555bb13e906f17c0a2c9e85"),
+    productId: 1,
+    productName: 'laptop',
+    price: 1000
+  },
+  {
+    _id: ObjectId("6555bb13e906f17c0a2c9e86"),
+    productId: 2,
+    productName: 'smartphone',
+    price: 800
+  },
+  {
+    _id: ObjectId("6555bb13e906f17c0a2c9e87"),
+    productId: 3,
+    productName: 'tablet',
+    price: 500
+  },
+  {
+    _id: ObjectId("6555bb13e906f17c0a2c9e88"),
+    productId: 4,
+    productName: 'tv',
+    price: 1500
+  }
+]
+assignment>
